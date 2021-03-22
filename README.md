@@ -1,4 +1,8 @@
 # ECNU Helper
+![GitHub](https://img.shields.io/github/license/CCXXXI/ECNU_Helper)
+![GitHub last commit](https://img.shields.io/github/last-commit/CCXXXI/ECNU_Helper)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/CCXXXI/ECNU_Helper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CCXXXI/ECNU_Helper/alerts/)
+[![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/CCXXXI/ECNU_Helper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CCXXXI/ECNU_Helper/context:java)
 
 ECNU学生工具箱，为2021年上半年软件工程实践课程项目。
 
