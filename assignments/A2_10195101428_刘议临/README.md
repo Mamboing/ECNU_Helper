@@ -56,7 +56,7 @@ LockDevice, Household Device, Timer, Database
 
 **6a**. 倒计时结束但**Tenant/Landlord**未打开房门，**System**通知**LockDevice**锁定房门、通知**Tenant/Landlord**超时、通知**Household Device**关闭设备，用例结束。
 
-7a. **Tenant/Landlord**未关门，**System**在倒计时结束时提醒**Tenant/Landlord**关门上锁，用例结束。
+**7a**. **Tenant/Landlord**未关门，**System**在倒计时结束时提醒**Tenant/Landlord**关门上锁，用例结束。
 
 ### 后置条件
 
