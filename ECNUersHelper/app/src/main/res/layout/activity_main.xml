@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- author:Apochens -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    头像框-->
+    <ImageButton
+        android:id="@+id/user_portrait"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+<!--    学习时长提醒-->
+    <TextView
+        android:id="@+id/study_time_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天已经学习了xxx小时xx分钟"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+<!--    学生姓名-->
+
+    <!--    学号-->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/user_portrait"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    作业计划-->
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/user_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+    <Button
+        android:id="@+id/homework_plan"
+        style="@style/button_main_option1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/main_homework_plan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/study_time_info" />
+
+<!--    错题-->
+    <Button
+        android:id="@+id/problems"
+        style="@style/button_main_option1"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/main_problems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/homework_plan"
+        app:layout_constraintTop_toBottomOf="@+id/study_time_info" />
+
+<!--    考试安排-->
+    <Button
+        android:id="@+id/test_schedule"
+        style="@style/button_main_option1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/main_test_schedule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homework_plan" />
+
+<!--    成绩-->
+    <Button
+        android:id="@+id/scores_record"
+        style="@style/button_main_option1"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/main_scores_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/test_schedule"
+        app:layout_constraintTop_toBottomOf="@+id/problems" />
+
+<!--    记账-->
+    <Button
+        android:id="@+id/finance_record"
+        style="@style/button_main_option1"
+        android:text="@string/main_finance_record"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_schedule" />
+
+<!--    日记-->
+    <Button
+        android:id="@+id/diary"
+        style="@style/button_main_option1"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/main_diary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/finance_record"
+        app:layout_constraintTop_toBottomOf="@+id/scores_record" />
+
+<!--    个人计划-->
+    <Button
+        android:id="@+id/self_plan"
+        style="@style/button_main_option2"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/main_self_plan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/study_time_info" />
+
+<!--    开始学习-->
+    <Button
+        android:id="@+id/start_study"
+        style="@style/button_main_option2"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/main_start_study"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/self_plan"
+        app:layout_constraintVertical_bias="0.316" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

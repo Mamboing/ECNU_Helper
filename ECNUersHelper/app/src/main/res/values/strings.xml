@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ECNUer\'s Helper</string>
+<!--    主界面 author:Apochens -->
+    <string name="main_study_time">你已经学习了%1$d小时%2$d分钟了</string>
+    <string name="main_homework_plan">作业计划</string>
+    <string name="main_problems">错题</string>
+    <string name="main_test_schedule">考试安排</string>
+    <string name="main_scores_record">成绩</string>
+    <string name="main_finance_record">记账</string>
+    <string name="main_diary">日记</string>
+    <string name="main_self_plan">个人计划</string>
+    <string name="main_start_study">开始学习</string>
+
+
+</resources>
