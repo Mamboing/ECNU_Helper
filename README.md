@@ -70,6 +70,6 @@ ECNU学生工具箱，为2021年上半年软件工程实践课程项目。
 
 移动平台的开发框架和语言中，跨平台的主要有Web、Qt、微信小程序，但组员缺乏相关经验，iOS开发使用的Swift、objective-c也同样如此，只有Android开发使用的Java有一定基础。
 
-考虑到Kotlin有A Better Java之称，同时又是另一种Android平台开发的官方支持语言，我们决定在前端使用Kotlin和Java混合开发。
+考虑到Kotlin有A Better Java之称，同时又是Android平台开发的[首选语言](https://developer.android.com/kotlin/first)，我们决定在前端使用Kotlin和Java混合开发。
 
 至于后端，按照代码界惯例，不存在也不需要固定的开发框架或语言，后续会视情况选择最方便的框架进行编写。
