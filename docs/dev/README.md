@@ -4,4 +4,4 @@
 
 按课程要求将部分文档合并为单一文件。
 
-* [Course Assignment 2](Course Assignment 2.docx)
+* [Course Assignment 2](Course%20Assignment%202.docx)
