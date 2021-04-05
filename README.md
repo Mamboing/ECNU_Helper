@@ -50,7 +50,7 @@ ECNU学生工具箱，为2021年上半年软件工程实践课程项目。
 | :----: | :---------: | :--------------------------------------------------------: | :----------: |
 |  黄杉  | 10195101418 |       [Apochens (chen)](https://github.com/Apochens)       |   错题记录   |
 | 刘议临 | 10195101428 |            [CCXXXI](https://github.com/CCXXXI)             | 课表导入导出 |
-| 章兆萌 | 10195101452 |            [zzm824](https://github.com/zzm824)             |              |
+| 章兆萌 | 10195101452 |            [zzm824](https://github.com/zzm824)             |   开销记录   |
 | 冉泓飞 | 10195101456 | [10195101456 (ranhongfei)](https://github.com/10195101456) | 学习成绩记录 |
 | 熊国誉 | 10195101550 |    [SplendidMendax](https://github.com/SplendidMendax)     | 学习时长记录 |
 | 李晓晗 | 10195101560 |          [Mamboing](https://github.com/Mamboing)           | 课表功能设计 |
