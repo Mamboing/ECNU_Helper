@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ClassScheduleActivity extends AppCompatActivity {
+    private static final String tag = "ClassScheduleActivity";
     private static ArrayList<ClassData> classList;
     private GridLayout mainGrid;
 
@@ -30,6 +32,7 @@ public class ClassScheduleActivity extends AppCompatActivity {
 
         if (classList == null)
             getClassData();
+
         addClassBlock();
     }
 
@@ -84,7 +87,19 @@ public class ClassScheduleActivity extends AppCompatActivity {
 
     private void getClassData() {
         classList = new ArrayList<>();
-        classList.add(new ClassData("网络安全数学","教书院323", 3,
+        classList.add(new ClassData("数据库系统及其应用", "教书院113", 1,
+                 3, 4, 1, 17));
+        classList.add(new ClassData("软件工程实践", "教书院419", 1,
+                 3, 4, 1, 17));
+        classList.add(new ClassData("网络安全数学", "教书院323", 3,
+                3, 4, 1, 17));
+        classList.add(new ClassData("数字图像处理","教书院219", 2,
+                3, 4, 1, 17));
+        classList.add(new ClassData("毛泽东思想和中国特色社会主义理论体系概论", "教书院316",
+                4, 9, 11, 1, 17));
+        classList.add(new ClassData("剑桥商务英语", "教书院210", 5,
+                1, 2, 1, 16));
+        classList.add(new ClassData("移动应用开发", "教书院219", 5,
                 3, 4, 1, 17));
     }
 }
