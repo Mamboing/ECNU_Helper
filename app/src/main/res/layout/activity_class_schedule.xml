@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <GridLayout
+            android:id="@+id/main_class_gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ecnu"
+            android:columnCount="6"
+            android:orientation="vertical"
+            android:rowCount="12"
+            android:useDefaultMargins="true">
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange1" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange2" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange3" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange4" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange5" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange6" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange7" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange8" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange9" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange10" />
+
+            <TextView
+                style="@style/TimeRangeView"
+                android:text="@string/timeRange11" />
+
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:elevation="0dp"
+        android:background="@drawable/appbar_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_text_view_week_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weekIndex"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/main_text_view_class_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classIndex"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_linear_weekdays"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    style="@style/WeekdayView"
+                    android:text="@string/Monday" />
+
+                <TextView
+                    style="@style/WeekdayView"
+                    android:text="@string/Tuesday" />
+
+                <TextView
+                    style="@style/WeekdayView"
+                    android:text="@string/Wednesday" />
+
+                <TextView
+                    style="@style/WeekdayView"
+                    android:text="@string/Thursday" />
+
+                <TextView
+                    style="@style/WeekdayView"
+                    android:text="@string/Friday" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
