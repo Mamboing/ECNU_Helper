@@ -55,6 +55,7 @@ public class ClassScheduleActivity extends AppCompatActivity {
                     classCard.setCardBackgroundColor(tmpClass.getBgColor());
                     classCard.addView(classText);
                     classCard.setRadius(20);
+                    Log.d(tag, "Add a CardView of a class completed!");
 
                     GridLayout.Spec rowSpec = GridLayout.spec(j, tmpClass.getClassRange());
                     GridLayout.Spec columnSpec = GridLayout.spec(i + 1, 1f);
@@ -66,6 +67,8 @@ public class ClassScheduleActivity extends AppCompatActivity {
                     mainGrid.addView(classCard, gridParams);
                     j += tmpClass.getClassRange();
                     ind++;
+
+                    Log.d(tag, "Add one count in 'if' sentence");
                 }
                 else {
                     View childView = new TextView(this);
@@ -80,6 +83,8 @@ public class ClassScheduleActivity extends AppCompatActivity {
                     childView.setBackgroundColor(getResources().getColor(R.color.transparent, null));
                     mainGrid.addView(childView, gridParams);
                     j += 1;
+
+                    Log.d(tag, "Add one count in 'else' sentence");
                 }
             }
         }
