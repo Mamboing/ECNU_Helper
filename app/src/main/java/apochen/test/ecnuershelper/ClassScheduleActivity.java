@@ -68,7 +68,7 @@ public class ClassScheduleActivity extends AppCompatActivity {
                     j += tmpClass.getClassRange();
                     ind++;
 
-                    Log.d(tag, "Add one count in 'if' sentence");
+                    Log.d(tag, "Add one count in 'if' sentence of addClassBlock().");
                 }
                 else {
                     View childView = new TextView(this);
@@ -84,7 +84,7 @@ public class ClassScheduleActivity extends AppCompatActivity {
                     mainGrid.addView(childView, gridParams);
                     j += 1;
 
-                    Log.d(tag, "Add one count in 'else' sentence");
+                    Log.d(tag, "Add one count in 'else' sentence of addClassBlock().");
                 }
             }
         }
