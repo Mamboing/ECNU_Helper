@@ -105,7 +105,9 @@ public class ClassScheduleActivity extends AppCompatActivity {
         classList = new ArrayList<>();
 
         /* 由于导入逻辑的原因，导入数据需要从左至右，从上至下导入，否则会出现部分课程块不显示的问题
-        * 下面为示例课程数据导入 */
+        * 目前该课表仅支持当前学期之前的课表数据，下学期更换的新课表的TimeRange范围需要重新设计调整
+        * 下面为示例课程数据导入
+        * */
         classList.add(new ClassData("数据库系统及其应用", "教书院113", 1,
                  3, 4, 1, 17));
         classList.add(new ClassData("软件工程实践", "教书院419", 1,
