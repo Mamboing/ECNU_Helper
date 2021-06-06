@@ -16,6 +16,7 @@ public class ClassData {
         LightPink, Flesh, Orange, GreyGreen, LightGreen, LightYellow, GreyBlue, FleshPink, Red, LightWhite
     }
 
+    /* 所有课程块颜色支持 */
     static final Map<BlockColor, Integer> colorMap = new HashMap<BlockColor, Integer>() {{
         put(BlockColor.LightPink, Color.rgb(254, 67, 101));
         put(BlockColor.Flesh, Color.rgb(249, 205, 173));
@@ -38,8 +39,11 @@ public class ClassData {
         this.endClassIndex = endClassIndex;
         this.startWeek = startWeek;
         this.endWeek = endWeek;
+        // 随机获取课程块的颜色
         this.bgColor = colorMap.get(BlockColor.values()[(int) (Math.random() * BlockColor.values().length)]);
     }
+
+    String getCourseName() { return courseName; }
 
     int getWeekdayIndex() { return weekdayIndex; }
 
@@ -50,6 +54,7 @@ public class ClassData {
     Integer getBgColor() { return bgColor; }
 
     String classInfo() {
+        /* 目前特殊情况的课程，诸如周数不连续的暂不支持显示 */
         return courseName + "\n" + classRoom + "\n" + startWeek + "~" + endWeek + "周";
     }
 
